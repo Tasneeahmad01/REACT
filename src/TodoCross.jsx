@@ -1,14 +1,3 @@
-// import React from 'react';
-
-// function TodoCross({ onClick }) {
-//   return (
-//     <span className="cross-icon" onClick={onClick}>
-//       ✖
-//     </span>
-//   );
-// }
-
-// export default TodoCross;
 
 
 import React from 'react';
@@ -24,9 +13,12 @@ function TodoCross({ onClick }) {
     fontSize:"0.9rem"
   }
   return (
+    <>
     <span className="cross-icon" style={style} onClick={onClick}>
       ✖
     </span>
+   
+   </>
   );
 }
 

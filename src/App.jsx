@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import TodoList from './TodoList';
 import TodoCross from './TodoCross';
+import  Increase  from './Increase';
 
 function App() {
   const [inputValue, setInputValue] = useState('');
@@ -38,6 +39,7 @@ function App() {
               <div key={index} className="todo-item">
                 <TodoCross onClick={() => removeItem(index)} />
                 <TodoList text={item} />
+                <Increase/>
               </div>
             ))}
           </ol>
