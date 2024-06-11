@@ -6,22 +6,19 @@ import TodoCross from './TodoCross';
 function App() {
   const [inputValue, setInputValue] = useState('');
   const [items, setItems] = useState([]);
-
   const itemEvent = (e) => {
     setInputValue(e.target.value);
   };
-
   const addItem = () => {
     if (inputValue.trim()) {
       setItems([...items, inputValue]);
       setInputValue('');
     }
   };
-
   const removeItem = (index) => {
     setItems(items.filter((item, i) => i !== index));
   };
-
+ 
   return (
     <>
       <div className='main_div'>

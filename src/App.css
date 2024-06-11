@@ -157,7 +157,7 @@ box-shadow:5px 5px 15px 5px rgba(0, 0, 0, 0.3) ;
 
 .center_div {
   width: 25%;
-  height: 80vh;
+  height: auto;
   background-color: #f4f4f4;
   box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
@@ -186,13 +186,15 @@ input {
 }
 
 button {
-  min-height: 40px;
+  min-height: 30px;
   width: 40px;
   border-radius: 50%;
   border-color: transparent;
   background-color: #8566aa;
   color: #fff;
   font-size: 40px;
+  margin: 5px;
+  padding: 5px;
   border: none;
   outline: none;
   margin-left: 10px;
@@ -211,9 +213,9 @@ ol {
 
 .todo-item {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right:100px;
+  align-items: start;
+  padding:5px ;
+  margin: 5px;
 }
 
 .cross-icon {
@@ -229,3 +231,24 @@ ol {
   background-color: darkred;
   border-radius: 50%;
 }
+
+@media (max-width:768) {
+  .center_div{
+    width: 55%;
+  }
+  .list_style .fa-items{
+    margin: 0 15px 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button{
+    margin-left: 5px;
+    min-height: 40px;
+    width: 40px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+
+  }
+} 
